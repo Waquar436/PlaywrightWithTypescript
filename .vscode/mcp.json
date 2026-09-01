@@ -1,0 +1,20 @@
+{
+    "servers": {
+        "ado-remote-mcp": {
+            "type": "http",
+            "url": "https://mcp.dev.azure.com/CTC_ADO",
+            "headers": {
+                "Authorization": "Basic ${input:ado-pat}",
+                "X-MCP-Toolsets": "wit,repos,pipeline,wiki",
+                "X-MCP-Readonly": "true"
+            }
+        }
+    },
+    "inputs": [
+        {
+            "id": "ado-pat",
+            "type": "promptString",
+            "description": "Azure DevOps Personal Access Token"
+        }
+    ]
+}

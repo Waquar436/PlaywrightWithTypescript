@@ -1,0 +1,33 @@
+{
+  "name": "demo-framework",
+  "version": "1.0.0",
+  "description": "Enterprise-style Playwright + Typescript framework - Page Object Model, custom fixtures, and storageState authentication. Self-contained: install and run from inside this folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:login": "playwright test login.spec.ts",
+    "test:inventory": "playwright test inventory.spec.ts",
+    "test:data": "playwright test data-driven.spec.ts",
+    "test:auth": "playwright test auth-reuse.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test-ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "install:browsers": "playwright install chromium"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}

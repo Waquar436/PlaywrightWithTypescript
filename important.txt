@@ -1,0 +1,17 @@
+9th session - 32:38
+
+ mins
+-->Command to install playwright using typescript
+Install node js
+create one folder in your local and go to that folder
+install playwright using cmd : npm init playwright@latest  
+run sample test using cmd : npx playwright test  
+see test report using cmd : px playwright show-report  
+
+-->Comand to execute type script
+execute all tests inside tests folder of framework using cmd: npx playwright test
+execute a specific test case using cmd: npx playwright test -g "validate parabank title" --headed
+
+
+-->Command to create code using record option in playwright inspector
+Give this cmd in playwright terminal and post that give all the required fields, code will come in playwright inspector: npx playwright codegen https://parabank.parasoft.com/parabank/index.htm
