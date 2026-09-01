@@ -1,4 +1,4 @@
-12th session - 00:00
+12th session - 10:00
 
  mins
 -->Command to install playwright using typescript
